@@ -8,4 +8,4 @@
 <p>The model avoids answering these questions respectfully.</p>
 
 <h3>General Questions</h3>
-<p>The model only replies very short with a few words</p>
+<p>The model only replies very short within a few words</p>
