@@ -27,6 +27,7 @@ openai_api_type="azure"
 
 
 
+
 psychology_template = """You are a helpful assistant. You are great at answering questions about Psychology. \
                         You are so good because you are able to break down hard problems into their component parts, \
                         answer the component parts, and then put them together to answer the broader question. 
@@ -35,15 +36,17 @@ Here is a question:
 {input}"""
 
 
-general_template = """You are a helpful assistant. Provide very short answers to questions. 
+sports_template = """You are a helpful assistant. You are great at answering questions about Sports. Provide very short answers to sport questions. 
 
 Here is a question:
 {input}"""
 
 
-forbidden_template = """You are a helpful assistant. Respectfully, do not provide information for questions regarding drugs and smoking. 
+general_template = """Respectfully, tell the user you cannot provide information in this regard. 
 Here is a question:
 {input}"""
+
+
 
 
 
@@ -55,16 +58,15 @@ prompt_infos = [
     },
     {
         "name": "general",
-        "description": "Good for answering any question except Psychology, drugs and smoking related",
+        "description": "Good for answering any question except Psychology and Sports",
         "prompt_template": general_template,
     },
     {
         "name": "forbid",
-        "description": "Good for answering Drugs and Smoking related questions",
-        "prompt_template": forbidden_template,
+        "description": "Good for answering Sports related questions",
+        "prompt_template": sports_template,
     },
 ]
-
 
 
 
