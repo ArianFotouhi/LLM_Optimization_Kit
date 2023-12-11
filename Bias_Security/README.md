@@ -9,3 +9,5 @@
 
 <h3>General Questions</h3>
 <p>The model only replies very short within a few words</p>
+
+NB: In our example, we access our LLM from AzureOpenAI service. Any language model including GPT models by OpenAI API will work as well.
